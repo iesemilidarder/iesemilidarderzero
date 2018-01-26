@@ -1,7 +1,12 @@
 package com.iesemilidarder.projectzero.core;
 
+import java.util.ArrayList;
+
 /*
 Creamos la clase restaurants con los string privadas y sus getters y setters
+*/
+/*
+Creamos la clase restaurants con los string privadas y sus getters y setters ademas creamos un array list de opiniones y una clase publica de restaurantes para la array list
 */
 public class Restaurantes {
     private String codigo;
@@ -12,6 +17,19 @@ public class Restaurantes {
     private String descripcion;
     private String imagen;
     private String mitjana;
+    private String latitud;
+    private String longitud;
+    private ArrayList<Opinions> opiniones;
+
+    public Restaurantes() {this.opiniones = new ArrayList<Opinions>();}
+
+    public ArrayList<Opinions> getOpiniones() {
+        return opiniones;
+    }
+
+    public void setOpiniones(ArrayList<Opinions> opiniones) {
+        this.opiniones = opiniones;
+    }
 
     public String getCodigo() {
         return codigo;
@@ -68,12 +86,29 @@ public class Restaurantes {
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
+
     public String getMitjana() {
         return mitjana;
     }
 
     public void setMitjana(String mitjana) {
         this.mitjana = mitjana;
+    }
+
+    public String getLatitud() {
+        return latitud;
+    }
+
+    public void setLatitud(String latitud) {
+        this.latitud = latitud;
+    }
+
+    public String getLongitud() {
+        return longitud;
+    }
+
+    public void setLongitud(String longitud) {
+        this.longitud = longitud;
     }
 }
 /*
